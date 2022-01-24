@@ -1,8 +1,10 @@
-# Train lidar\_apollo\_instance\_segmentation CNN  
+# Train & Deploy lidar\_apollo\_instance\_segmentation Network.  
 
 Train lidar\_apollo\_instance\_segmentation CNN with Nuscenes.  
 
 <img src="https://user-images.githubusercontent.com/39142679/85943007-32e7a280-b968-11ea-9d9e-51e9b157bfe5.gif" width="1000">  
+
+this code is from [kosuke55/train_baiducnn](https://github.com/kosuke55/train_baiducnn)
 
 ## Getting Started  
 Only supports python3.  
@@ -14,7 +16,7 @@ pip install -r requirements.txt
 mkdir build
 cd build
 cmake ..
-make -j
+make -j4
 ```
 
 2) [create_dataset_from_nusc.py](scripts/create_dataset/create_dataset_from_nusc.py) is for creating a dataset to train apollo cnn.  Set dataroot and save_dir.  
